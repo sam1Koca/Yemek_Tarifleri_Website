@@ -1,0 +1,14 @@
+﻿yatayMenu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #4fb99f;
+    overflow: auto;
+}
+
+    .yatayMenu li {
+        float: left;
+        border-bottom: 3px solid #4fb99f;
+    }
+
+
