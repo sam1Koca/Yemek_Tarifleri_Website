@@ -32,10 +32,10 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style14"><strong>
-                    <asp:Button ID="Button1" runat="server" CssClass="auto-style13" Height="30px" Text="+" Width="30px" OnClick="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" CssClass="auto-style13" Height="30px" Text="+" Width="30px"/>
                     </strong></td>
                 <td class="auto-style15"><strong>
-                    <asp:Button ID="Button2" runat="server" CssClass="auto-style13" Height="30px" Text="-" Width="30px" OnClick="Button2_Click" />
+                    <asp:Button ID="Button2" runat="server" CssClass="auto-style13" Height="30px" Text="-" Width="30px"/>
                     </strong></td>
                 <td style="background-color: #99CCFF">ONAYLANAN YORUM LİSTESİ</td>
             </tr>

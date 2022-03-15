@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
+    <Content Include="BannerPhoto\AdminPanelBanner.png" />
     <Content Include="BannerPhoto\FoodHeader2.jpg" />
     <Content Include="BannerPhoto\fotoHeader1.jpg" />
     <Content Include="BannerPhoto\loginBannerPhoto.jpg" />
@@ -78,6 +79,7 @@
     <Content Include="KategoriDuzenle.aspx" />
     <Content Include="Kategoriler.aspx" />
     <Content Include="Kullanici.css" />
+    <Content Include="Mesajlar.aspx" />
     <Content Include="resimler\1712164_74070_1640790574.jpg" />
     <Content Include="resimler\blog.jpg" />
     <Content Include="resimler\YemekTarifiSitesi-MücverResmi1.png" />
@@ -91,6 +93,7 @@
     <Content Include="Yemekler.aspx" />
     <Content Include="YorumDetay.aspx" />
     <Content Include="Yorumlar.aspx" />
+    <Content Include="İcons\book-reading.png" />
     <Content Include="İcons\deleteİCON.png" />
     <Content Include="İcons\UpdateİCON.jpg" />
     <Content Include="İcons\updateİCON2.png" />
@@ -145,6 +148,13 @@
     </Compile>
     <Compile Include="Kullanici.Master.designer.cs">
       <DependentUpon>Kullanici.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Mesajlar.aspx.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mesajlar.aspx.designer.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AnaSayfa.aspx.cs">
