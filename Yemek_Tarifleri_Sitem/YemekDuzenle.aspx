@@ -7,6 +7,18 @@
         .auto-style9 {
             text-align: left;
         }
+    .auto-style10 {
+        height: 35px;
+    }
+    .auto-style11 {
+        text-align: left;
+        height: 35px;
+    }
+    .auto-style12 {
+        font-weight: bold;
+        color: #FFFFFF;
+        background-color: #990033;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -41,9 +53,17 @@
             </td>
         </tr>
         <tr>
+            <td class="auto-style10"></td>
+            <td class="auto-style11">
+                <asp:Button ID="Button1" runat="server" CssClass="testbutton" Text="Güncelle" Width="250px" OnClick="Button1_Click" />
+            </td>
+        </tr>
+        <tr>
             <td>&nbsp;</td>
             <td class="auto-style9">
-                <asp:Button ID="Button1" runat="server" CssClass="testbutton" Text="Güncelle" Width="250px" OnClick="Button1_Click" />
+                <strong>
+                <asp:Button ID="Button2" runat="server" CssClass="auto-style12" Height="35px" OnClick="Button2_Click" Text="GÜNÜN YEMEĞİ SEÇ" Width="250px" />
+                </strong>
             </td>
         </tr>
     </table>

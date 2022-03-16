@@ -71,7 +71,7 @@
                         <td class="auto-style4" style="border: thin solid #FFFFFF"><strong><a href="Mesajlar.aspx">MESAJLAR</a></strong></td>
                     </tr>
                     <tr>
-                        <td class="auto-style4" style="border: thin solid #FFFFFF"><strong>GÜNÜN YEMEĞİ</strong></td>
+                        <td class="auto-style4" style="border: thin solid #FFFFFF"><strong><a href="GununYemegiAdmin.aspx">GÜNÜN YEMEĞİ</a></strong></td>
                     </tr>
                     <tr>
                         <td class="auto-style4" style="border: thin solid #FFFFFF"><strong>ÖNERİLER</strong></td>

@@ -1,6 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Mesajlar.aspx.cs" Inherits="Yemek_Tarifleri_Sitem.Mesajlar" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="GununYemegiAdmin.aspx.cs" Inherits="Yemek_Tarifleri_Sitem.GununYemegiAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
+
 
 
         .auto-style11 {
@@ -18,12 +19,9 @@
             text-align: center;
         }
         .auto-style16 {
-            left: 1%;
-            top: -2147483648px;
-            width: 191px;
             text-align: right;
         }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Panel ID="Panel1" runat="server" BackColor="#FF6699" CssClass="auto-style11" BorderColor="#6699FF">
@@ -35,11 +33,10 @@
                 <td class="auto-style15"><strong>
                     <asp:Button ID="Button2" runat="server" CssClass="auto-style13" Height="30px" Text="-" Width="30px" OnClick="Button2_Click"/>
                     </strong></td>
-                <td style="background-color: #99CCFF"><strong>MESAJLAR LİSTESİ</strong></td>
+                <td style="background-color: #99CCFF"><strong>YEMEK LİSTESİ</strong></td>
             </tr>
         </table>
     </asp:Panel>
-
     <asp:Panel ID="Panel2" runat="server">
         <asp:DataList ID="DataList1" runat="server" Width="449px">
             <ItemTemplate>
@@ -47,12 +44,12 @@
                     <tr>
                         <td class="auto-style10">
                             <strong>
-                            <asp:Label ID="Label1" runat="server" CssClass="auto-style4" Text='<%# Eval("MesajGonderen") %>'></asp:Label>
+                            <asp:Label ID="Label1" runat="server" CssClass="auto-style4" Text='<%# Eval("YemekAd") %>'></asp:Label>
                             </strong>
                         </td>
                         
                         <td class="auto-style16">
-                            <a href="MesajDetay.aspx?Mesajid=<%#Eval("Mesajid") %>"><asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/İcons/book-reading.png" Width="39px" /></a>
+                            <a href="YemekDuzenle.aspx?Yemekİd=<%#Eval("Yemekİd") %>"><asp:Image ID="Image3" runat="server" Height="29px" ImageUrl="~/İcons/SECİMİcon.png" Width="31px" /></a>
                             </td>
                     </tr>
                 </table>
