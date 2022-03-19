@@ -74,10 +74,10 @@
                         <td class="auto-style4" style="border: thin solid #FFFFFF"><strong><a href="GununYemegiAdmin.aspx">GÜNÜN YEMEĞİ</a></strong></td>
                     </tr>
                     <tr>
-                        <td class="auto-style4" style="border: thin solid #FFFFFF"><strong>ÖNERİLER</strong></td>
+                        <td class="auto-style4" style="border: thin solid #FFFFFF"><strong><a href="Tarifler.aspx">TARİFLER</a></strong></td>
                     </tr>
                     <tr>
-                        <td class="auto-style4" style="border: thin solid #FFFFFF"><strong>HAKKIMIZDA</strong></td>
+                        <td class="auto-style4" style="border: thin solid #FFFFFF"><strong><a href="HakkimizdaAdmin.aspx">HAKKIMIZDA</a></strong></td>
                     </tr>
                 </table>
                 <br />

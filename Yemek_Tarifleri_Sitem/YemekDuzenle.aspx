@@ -19,6 +19,10 @@
         color: #FFFFFF;
         background-color: #990033;
     }
+        .auto-style13 {
+            height: 35px;
+            text-align: right;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -53,7 +57,13 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style10"></td>
+            <td class="auto-style13"><strong>Yemek</strong> <strong>Görüntü</strong>:</td>
+            <td class="auto-style11">
+                <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style10">&nbsp;</td>
             <td class="auto-style11">
                 <asp:Button ID="Button1" runat="server" CssClass="testbutton" Text="Güncelle" Width="250px" OnClick="Button1_Click" />
             </td>

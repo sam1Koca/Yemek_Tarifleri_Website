@@ -47,13 +47,17 @@ namespace Yemek_Tarifleri_Sitem
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e) // Update Button
         {
-            SqlCommand komut = new SqlCommand("Update Tbl_Yemekler set YemekAd=@p1 ,YemekMalzeme=@p2 ,YemekTarif=@p3,Kategoriİd=@p4 where Yemekİd=@p5",sqlClasses.Baglanti());
+            FileUpload1.SaveAs(Server.MapPath("/resimler/" + FileUpload1.FileName)); // FileUpload içerisindeki değeri farklı kayıt et
+            // Server.MapPath == O resmi nereye kayıt edeceksin
+
+            SqlCommand komut = new SqlCommand("Update Tbl_Yemekler set YemekAd=@p1 ,YemekMalzeme=@p2 ,YemekTarif=@p3,Kategoriİd=@p4,YemekResim=@p6 where Yemekİd=@p5",sqlClasses.Baglanti());
             komut.Parameters.AddWithValue("@p1", TextBox1.Text);
             komut.Parameters.AddWithValue("@p2", TextBox2.Text);
             komut.Parameters.AddWithValue("@p3", TextBox3.Text);
             komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
+            komut.Parameters.AddWithValue("@p6", "~/resimler/" + FileUpload1.FileName);
             komut.Parameters.AddWithValue("@p5", Convert.ToInt32(id));
             komut.ExecuteNonQuery();
             sqlClasses.Baglanti().Close();

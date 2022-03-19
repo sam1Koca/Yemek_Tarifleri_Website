@@ -45,7 +45,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style10">
-                        <asp:Image ID="Image2" runat="server" Height="182px" ImageUrl="~/resimler/YemekTarifiSitesi-MücverResmi1.png" Width="243px" />
+                        <asp:Image ID="Image2" runat="server" Height="152px" ImageUrl='<%# Eval("YemekResim") %>' Width="257px" />
                     </td>
                 </tr>
                 <tr>
